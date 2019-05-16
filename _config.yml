@@ -6,7 +6,7 @@ url: "https://lvivdevclub.github.io/"
 githuburl: https://github.com/LvivDevClub
 
 # Google services
-google_analytics: UA-1596745-42
+google_analytics: UA-1596745-44
 
 theme: jekyll-theme-cayman
 paginate: 5
