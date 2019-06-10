@@ -1,0 +1,18 @@
+---
+layout: default
+title: Documentations
+---
+<h1>Documentations</h1>
+
+<h2>Advanced level</h2>
+
+{% for documentation in site.documentations %}
+<h3>{{ documentation.title }}</h3>
+<p>{{ documentation.intro }} <a href="{{ documentation.url }}">Read more...</a></p>
+{% endfor %}
+
+
+<h1>Application</h1>
+{% for application in site.applications %}
+<a href="{{ application.url }}">{{ application.title }}</a>,
+{% endfor %}

@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+.main-content{
+  @media screen {
+    max-width: 100%;
+  }
+}
+
 .page-header {
 
   @include large {
