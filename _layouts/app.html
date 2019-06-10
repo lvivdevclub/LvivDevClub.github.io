@@ -5,14 +5,18 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline"><a href="/">Events</a> / {{ page.title | escape }}</h1>
-        <p class="post-meta">
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                {{ page.date | date: date_format }}
-            </time>
+        <h1 class="post-title" itemprop="name headline"><a href="/documentations.html">Documentation</a> / {{ page.title | escape }}</h1>
     </header>
 
+    {% if page.image != blank %}
+        <img src="{{ page.image }}"/><br/>
+    {% endif %}
+
+    {% if page.web != blank %}
+        Website: <a href="{{ page.web }}" target="_blank">{{ page.web }}</a><br/>
+    {% endif %}
+
+    <br/>
     <div class="post-content" itemprop="articleBody">
         {{ page.content }}
     </div>

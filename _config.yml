@@ -12,3 +12,12 @@ theme: jekyll-theme-cayman
 paginate: 5
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+collections:
+  documentations:
+    output: true
+  applications:
+    output: true
+  subtopics:
+    output: true
